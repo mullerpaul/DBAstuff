@@ -1,0 +1,42 @@
+Why is the TOAD schema compare not as nice as one we can build ourselvs?
+------------------------------------------------------------------------
+The Toad schema compare can only do one schema at a time.  We can do all three application schema!!1!
+
+
+
+will do these in first cut:
+---------------------------
+table&cols
+view&cols
+indexes & index cols
+constraints & cons cols
+synonyms (public and private) for application objects
+
+
+will wait on these:
+-------------------
+types/type bodies
+partitions and subpartitions for partitioned tables and indexes
+packages/package bodies/procedures/functions
+triggers
+database links
+jobs/scheduler jobs
+object privs on application objects
+sys privs for application schemas
+granted roles and role privs for application schemas.
+
+
+First cut:
+----------
+a simple SQL*Plus script run from my workstation.  
+It will create DB links to my account in the baseline and target databases
+run "Diff" queries against the data dictionary and print the output (html output?)
+
+ideas for future attempts:
+--------------------------
+a package (publicly executable) will capture data dictionary snapshots.
+This info is stored in some tables in a repository schema.
+we execute this pacakge at each deploy.
+another procedure in the same package will create a report of datamodel changes between
+the first snapshot and the most recent snapshot.
+
