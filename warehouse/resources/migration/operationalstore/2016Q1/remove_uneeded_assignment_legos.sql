@@ -1,0 +1,10 @@
+DELETE FROM lego_refresh
+ WHERE object_name IN ('LEGO_ASSIGNMENT_CAC','LEGO_ASSIGNMENT_ACTIVE_CAC')
+/
+
+COMMIT
+/
+
+
+
+ 

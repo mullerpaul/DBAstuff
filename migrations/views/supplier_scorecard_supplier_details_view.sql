@@ -1,0 +1,1 @@
+--SSC supplier_view

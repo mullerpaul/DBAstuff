@@ -1,0 +1,3 @@
+ALTER TABLE client_metric_coefficient
+ADD (CREATED_BY_USERNAME   VARCHAR2(100 CHAR))
+/

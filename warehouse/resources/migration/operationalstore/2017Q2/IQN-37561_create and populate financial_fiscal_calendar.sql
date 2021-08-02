@@ -1,0 +1,175 @@
+
+/* 5/4/2017 - Hassina Majid
+  create and populate the finance department fiscal calendar
+*/
+
+declare
+  ln_table_exists number :=0;
+begin
+
+ select count(*) into ln_table_exists from user_tables where table_name = 'FINANCE_FISCAL_CALENDAR';
+ 
+ if (ln_table_exists > 0)
+  then
+    execute immediate 'drop table finance_fiscal_calendar'; 
+ end if;  
+end;
+/
+CREATE TABLE FINANCE_FISCAL_CALENDAR
+(start_date   date,
+ end_date     date)
+/
+ 
+
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('07/02/2015', 'MM/DD/YYYY'), TO_DATE('08/02/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('07/03/2015', 'MM/DD/YYYY'), TO_DATE('08/03/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('07/27/2015', 'MM/DD/YYYY'), TO_DATE('08/25/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('08/24/2015', 'MM/DD/YYYY'), TO_DATE('09/29/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('09/28/2015', 'MM/DD/YYYY'), TO_DATE('10/27/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('10/26/2015', 'MM/DD/YYYY'), TO_DATE('11/24/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('11/23/2015', 'MM/DD/YYYY'), TO_DATE('12/29/2015' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('12/28/2015', 'MM/DD/YYYY'), TO_DATE('01/26/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('01/25/2016', 'MM/DD/YYYY'), TO_DATE('03/01/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('02/29/2016' , 'MM/DD/YYYY'), TO_DATE('04/05/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('04/04/2016' , 'MM/DD/YYYY'), TO_DATE('05/03/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('05/02/2016' , 'MM/DD/YYYY'), TO_DATE('05/31/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('05/30/2016' , 'MM/DD/YYYY'), TO_DATE('07/05/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('07/04/2016' , 'MM/DD/YYYY'), TO_DATE('08/02/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('08/01/2016' , 'MM/DD/YYYY'), TO_DATE('08/30/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('08/29/2016' , 'MM/DD/YYYY'), TO_DATE('10/04/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('10/03/2016' , 'MM/DD/YYYY'), TO_DATE('11/01/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('10/31/2016' , 'MM/DD/YYYY'), TO_DATE('11/29/2016' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('11/28/2016' , 'MM/DD/YYYY'), TO_DATE('01/03/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('01/02/2017' , 'MM/DD/YYYY'), TO_DATE('01/31/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('01/30/2017' , 'MM/DD/YYYY'), TO_DATE('02/28/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('02/27/2017' , 'MM/DD/YYYY'), TO_DATE('04/04/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('04/03/2017' , 'MM/DD/YYYY'), TO_DATE('05/02/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('05/01/2017' , 'MM/DD/YYYY'), TO_DATE('05/30/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('07/03/2017' , 'MM/DD/YYYY'), TO_DATE('08/01/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('07/31/2017' , 'MM/DD/YYYY'), TO_DATE('08/29/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('08/28/2017' , 'MM/DD/YYYY'), TO_DATE('10/03/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('10/02/2017' , 'MM/DD/YYYY'), TO_DATE('10/31/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('10/30/2017' , 'MM/DD/YYYY'), TO_DATE('11/28/2017' , 'MM/DD/YYYY'))
+/
+Insert into FINANCE_FISCAL_CALENDAR
+   (START_DATE, END_DATE)
+ Values
+   (TO_DATE('11/27/2017' , 'MM/DD/YYYY'), TO_DATE('01/02/2018' , 'MM/DD/YYYY'))
+/
+COMMIT
+/   

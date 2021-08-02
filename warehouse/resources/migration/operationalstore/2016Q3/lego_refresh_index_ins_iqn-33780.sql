@@ -1,0 +1,48 @@
+/* 08/03/2016 IQN-33780 jpullifrone 
+  These indices were first tested when building the lego_invoice process, specifically upon insert
+  into LEGO_INVD_EXPD_DATE_RU */  
+
+--LEGO_BUS_ORG
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_BUS_ORG','USPROD','BUS_ORG_IQP_U01','UNIQUE','BUS_ORG_ID,BUS_ORG_NAME')
+/  
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_BUS_ORG','WFPROD','BUS_ORG_WF_U01','UNIQUE','PERSON_ID,BUS_ORG_NAME')
+/
+--LEGO_PERSON
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_PERSON','USPROD','PERSON_IQP_U01','UNIQUE','PERSON_ID,DISPLAY_NAME')
+/  
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_PERSON','WFPROD','PERSON_WF_U01','UNIQUE','PERSON_ID,DISPLAY_NAME')
+/ 
+--LEGO_ASSIGNMENT_WO
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_ASSIGNMENT_WO','USPROD','ASSIGNMENT_WO_IQP_U01','UNIQUE','ASSIGNMENT_CONTINUITY_ID,ASSIGNMENT_TYPE,JOB_ID,JC_DESCRIPTION,JL_DESCRIPTION,CONTRACTOR_PERSON_ID,HIRING_MGR_PERSON_ID,ASSIGN_JOB_TITLE,ASSIGNMENT_START_DT,ASSIGNMENT_ACTUAL_END_DT')
+/  
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_ASSIGNMENT_WO','WFPROD','ASSIGNMENT_WO_WF_U01','UNIQUE','ASSIGNMENT_CONTINUITY_ID,ASSIGNMENT_TYPE,JOB_ID,JC_DESCRIPTION,JL_DESCRIPTION,CONTRACTOR_PERSON_ID,HIRING_MGR_PERSON_ID,ASSIGN_JOB_TITLE,ASSIGNMENT_START_DT,ASSIGNMENT_ACTUAL_END_DT')
+/
+--LEGO_ASSIGNMENT_EA
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_ASSIGNMENT_EA','USPROD','ASSIGNMENT_EA_IQP_U01','UNIQUE','ASSIGNMENT_CONTINUITY_ID,ASSIGNMENT_TYPE,JOB_ID,JC_DESCRIPTION,JL_DESCRIPTION,CONTRACTOR_PERSON_ID,HIRING_MGR_PERSON_ID,ASSIGN_JOB_TITLE,ASSIGNMENT_START_DT,ASSIGNMENT_ACTUAL_END_DT')
+/  
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_ASSIGNMENT_EA','WFPROD','ASSIGNMENT_EA_WF_U01','UNIQUE','ASSIGNMENT_CONTINUITY_ID,ASSIGNMENT_TYPE,JOB_ID,JC_DESCRIPTION,JL_DESCRIPTION,CONTRACTOR_PERSON_ID,HIRING_MGR_PERSON_ID,ASSIGN_JOB_TITLE,ASSIGNMENT_START_DT,ASSIGNMENT_ACTUAL_END_DT')
+/
+--LEGO_PROJECT_AGREEMENT
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_PROJECT_AGREEMENT','USPROD','PROJECT_AGREEMENT_IQP_U01','UNIQUE','PROJECT_AGREEMENT_ID,PA_NAME')
+/  
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_PROJECT_AGREEMENT','WFPROD','PROJECT_AGREEMENT_WF_U01','UNIQUE','PROJECT_AGREEMENT_ID,PA_NAME')
+/
+--LEGO_SOW_MILESTONE_INVOICE
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_SOW_MILESTONE_INVOICE','USPROD','SOW_MILESTONE_INVOICE_IQP_U01','UNIQUE','MILESTONE_INVOICE_ID,SOW_SPEND_CATEGORY,SOW_SPEND_TYPE')
+/  
+INSERT INTO lego_refresh_index (object_name, source_name, index_name, index_type, column_list)
+    VALUES ('LEGO_SOW_MILESTONE_INVOICE','WFPROD','SOW_MILESTONE_INVOICE_WF_U01','UNIQUE','MILESTONE_INVOICE_ID,SOW_SPEND_CATEGORY,SOW_SPEND_TYPE')
+/
+COMMIT
+/

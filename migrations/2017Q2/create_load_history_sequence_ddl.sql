@@ -1,0 +1,3 @@
+CREATE SEQUENCE load_history_seq
+START WITH 10000
+/

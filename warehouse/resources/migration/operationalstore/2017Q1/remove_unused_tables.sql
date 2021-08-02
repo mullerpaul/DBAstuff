@@ -1,0 +1,15 @@
+BEGIN
+  EXECUTE IMMEDIATE 'DROP TABLE lego_invoice_detail_gtt PURGE';
+EXCEPTION  
+  WHEN OTHERS THEN 
+    NULL;
+END;
+/
+
+BEGIN
+  EXECUTE IMMEDIATE 'DROP TABLE lego_incremental_extractor PURGE';
+EXCEPTION  
+  WHEN OTHERS THEN 
+    NULL;
+END;
+/

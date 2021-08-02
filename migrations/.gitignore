@@ -1,0 +1,13 @@
+# Tell git to ignore these files if they exist in a developer's migrations directory
+#  created by Paul Muller.  All these files are things I've been using.
+#  The need for this ignore file really goes away after the initial development phase.
+
+# I use this script to completely wipe out all objects in the ssc schema.  Not something we want checked in!
+wipe_schema.sql
+
+# I'm using this to store complex liquibase command lines with parameters
+runit.sh
+
+# SQLPlus creates this editor temp file.  Never check it in.
+afiedt.buf
+

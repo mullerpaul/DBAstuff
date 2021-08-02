@@ -1,0 +1,46 @@
+/* Joe Pullifrone 
+   05/22/2017
+   IQN-37665
+
+*/
+
+BEGIN
+
+  EXECUTE IMMEDIATE 'ALTER TABLE assignment_wo_iqp1 ADD offer_id NUMBER';
+     
+EXCEPTION  
+  WHEN OTHERS THEN 
+    NULL;
+END;
+/
+
+BEGIN
+
+  EXECUTE IMMEDIATE 'ALTER TABLE assignment_wo_iqp2 ADD offer_id NUMBER';
+     
+EXCEPTION  
+  WHEN OTHERS THEN 
+    NULL;
+END;
+/
+
+BEGIN
+
+  EXECUTE IMMEDIATE 'ALTER TABLE assignment_wo_wf1 ADD offer_id NUMBER';
+     
+EXCEPTION  
+  WHEN OTHERS THEN 
+    NULL;
+END;
+/
+
+BEGIN
+
+  EXECUTE IMMEDIATE 'ALTER TABLE assignment_wo_wf2 ADD offer_id NUMBER';
+     
+EXCEPTION  
+  WHEN OTHERS THEN 
+    NULL;
+END;
+/
+

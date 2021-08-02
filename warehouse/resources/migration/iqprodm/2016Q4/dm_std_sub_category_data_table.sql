@@ -1,0 +1,57 @@
+
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (0,'NoStdSubCategory')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (1,'Business Support')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (2,'Graphic Design')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (3,'Supply Chain')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (4,'Business Operations')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (5,'Customer Care')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (6,'HR')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (7,'Marketing')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (8,'Sales')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (9,'Engineering Design')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (10,'Engineering')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (11,'Engineering Operations')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (12,'Finance/Accounting Analysis')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (13,'Finance/Accounting Operations')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (14,'Nursing')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (15,'IT Business Management')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (16,'Analytics')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (17,'IT Systems/Infrastructure')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (18,'Software/Application Development')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (19,'IT Architecture')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (20,'IT Specialized Consultant')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (21,'Light Industrial Production')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (22,'Facilities Ops')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (23,'Warehouse')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (24,'Skilled Trades')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (25,'Merchandising')
+/
+Insert into DM_STD_SUB_CATEGORY (STD_SUB_CATEGORY_ID,STD_SUB_CATEGORY_DESC) values (26,'Retail')
+/
+COMMIT
+/
