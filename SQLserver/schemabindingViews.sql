@@ -65,3 +65,8 @@ select s.[name] as SchemaName,
 
 -- can we reproduce the data conversion runtime errors mike and I saw?
 -- it looked more like a date conversion error - i thought it was bad data in a text field which we were trying to cast to date.
+
+-- might need these doc pages:  
+-- https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-refreshsqlmodule-transact-sql?view=sql-server-ver15
+-- https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-refreshview-transact-sql?view=sql-server-ver15
+
