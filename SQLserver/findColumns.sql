@@ -6,7 +6,7 @@ select s.name as SchemaName,
        inner join sys.columns c on o.object_id = c.object_id
  where 1=1
    --and s.name = 'dbo'
-   --and t.name = 'VW_Sales_Activity'
+   --and o.name = 'VW_Sales_Activity'
    and c.name like '%pipeline%callback%'
  order by s.name, o.name, c.column_id
 ;
